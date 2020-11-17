@@ -4,19 +4,23 @@
   "description": "A chat app using WebSockets",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/iamshaunjp/websockets-playlist.git"
   },
-  "author": "The Net Ninja",
+  "author": "Malik",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/iamshaunjp/websockets-playlist/issues"
   },
   "homepage": "https://github.com/iamshaunjp/websockets-playlist#readme",
   "dependencies": {
-    "express": "^4.15.2"
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.6"
   }
 }
