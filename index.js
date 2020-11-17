@@ -15,5 +15,10 @@ app.use(express.static('public'))
 const io = socket(server)
 
 io.on('connection', function(socket) {
-    console.log('made socket connection', socket.id)
+    console.log('made socket connection', socket.id);
+
+    // when 'chat' is received from client, passes data through emit function and send it back to all connected clients
+    socket.on('chat', function(data){
+        io.sockets.emit('chat', data);
+    })
 })
